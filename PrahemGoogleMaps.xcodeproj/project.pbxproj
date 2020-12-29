@@ -13,6 +13,7 @@
 		061C14692597339200ED7ACB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061C14672597339200ED7ACB /* Main.storyboard */; };
 		061C146B2597339700ED7ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061C146A2597339700ED7ACB /* Assets.xcassets */; };
 		061C146E2597339700ED7ACB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061C146C2597339700ED7ACB /* LaunchScreen.storyboard */; };
+		23458E66F286282E4F44054B /* Pods_PrahemGoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA291BF0D38926461FAFBF00 /* Pods_PrahemGoogleMaps.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		061C146A2597339700ED7ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		061C146D2597339700ED7ACB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		061C146F2597339700ED7ACB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA291BF0D38926461FAFBF00 /* Pods_PrahemGoogleMaps.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrahemGoogleMaps.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC8A61A9EF5ED23B97494893 /* Pods-PrahemGoogleMaps.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrahemGoogleMaps.release.xcconfig"; path = "Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps.release.xcconfig"; sourceTree = "<group>"; };
+		F2E5A1C9F26555777BE69937 /* Pods-PrahemGoogleMaps.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrahemGoogleMaps.debug.xcconfig"; path = "Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23458E66F286282E4F44054B /* Pods_PrahemGoogleMaps.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				061C14602597339200ED7ACB /* PrahemGoogleMaps */,
 				061C145F2597339200ED7ACB /* Products */,
+				21375C45CEE3722AA63856FF /* Pods */,
+				4C5515C046C6D279C270BDFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = PrahemGoogleMaps;
 			sourceTree = "<group>";
 		};
+		21375C45CEE3722AA63856FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2E5A1C9F26555777BE69937 /* Pods-PrahemGoogleMaps.debug.xcconfig */,
+				BC8A61A9EF5ED23B97494893 /* Pods-PrahemGoogleMaps.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4C5515C046C6D279C270BDFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA291BF0D38926461FAFBF00 /* Pods_PrahemGoogleMaps.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 061C14722597339700ED7ACB /* Build configuration list for PBXNativeTarget "PrahemGoogleMaps" */;
 			buildPhases = (
+				B354044A07F70FF20C361797 /* [CP] Check Pods Manifest.lock */,
 				061C145A2597339200ED7ACB /* Sources */,
 				061C145B2597339200ED7ACB /* Frameworks */,
 				061C145C2597339200ED7ACB /* Resources */,
+				583838F22F7B499854533794 /* [CP] Embed Pods Frameworks */,
+				25AB8BBA085FA90BC3F11AE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,65 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25AB8BBA085FA90BC3F11AE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		583838F22F7B499854533794 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PrahemGoogleMaps/Pods-PrahemGoogleMaps-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B354044A07F70FF20C361797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrahemGoogleMaps-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		061C145A2597339200ED7ACB /* Sources */ = {
@@ -282,6 +369,7 @@
 		};
 		061C14732597339700ED7ACB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2E5A1C9F26555777BE69937 /* Pods-PrahemGoogleMaps.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +387,7 @@
 		};
 		061C14742597339700ED7ACB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC8A61A9EF5ED23B97494893 /* Pods-PrahemGoogleMaps.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
